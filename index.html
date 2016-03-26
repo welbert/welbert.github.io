@@ -1,0 +1,199 @@
+<html>
+<Head>
+<title>.:Welbert Serra:.</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<link rel="shortcut icon" href="image/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/Script.js"></script>
+
+
+</Head>
+
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+		$(window).load(function(){
+			  $("#loading").fadeOut(0);
+			  $("#content").fadeIn(1000);
+			});
+	});
+
+
+	function onInit() {
+		document.getElementById("loadGif").style.width = (window.innerHeight * 50)
+		/ 100 + "px";
+		document.getElementById("loadGif").style.height = (window.innerHeight * 50)
+		/ 100 + "px";
+		//document.getElementById("loadGif").style.marginTop = (window.innerHeight * 20)
+		/// 100 + "px";
+		
+		document.getElementById("topDiv").style.width = window.innerWidth
+				+ "px";
+		document.getElementById("botDiv").style.width = window.innerWidth
+				+ "px";
+		document.getElementById("topDiv").style.height = (window.innerHeight * 10)
+				/ 100 + "px";
+		document.getElementById("botDiv").style.height = (window.innerHeight * 10)
+				/ 100 + "px";
+		document.getElementById("midDiv").style.width = window.innerWidth
+		+ "px";
+		document.getElementById("midDiv").style.height = (window.innerHeight * 82)
+		/ 100 + "px";
+		
+		if(window.innerWidth - window.innerHeight <= 0){
+			document.getElementById("mySelf").style = "display: none;";		
+			
+			document.getElementById("littleMySelf").style = 
+				"filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.6));display: block;";
+			document.getElementById("littleMySelf").style.width = 
+				(window.innerHeight * 20)/ 100 + "px";
+		}else{
+			document.getElementById("mySelf").style = 
+				"filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.6));display: block;";
+			document.getElementById("mySelf").style.width = (window.innerHeight * 60)
+			/ 100 + "px";
+			
+			document.getElementById("littleMySelf").style = "display: none;";
+		}
+	}
+</script>
+<body class="background"
+onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
+	<div id="loading">
+	<div style="display: inline-block;">
+	<table style="height: 100%">
+		<tr><td style="height: 33%"></tr>
+		<tr>
+			<td style="height: 33%">
+				<div style="display: inline-block;">
+			    	<img id="loadGif" width="185px" height="185px" src="image/loading.gif"/>
+			    </div>
+		    </td>
+		 </tr>
+		<tr><td style="height: 33%"></tr>
+	 </table>
+	 </div>	 
+	 </div>
+  
+	<div id="content" style="display: none; z-index: 1;">
+		<div id="topDiv" class="extremidade" align="center">
+			Welbert Serra	
+		</div>
+		
+		
+		<div id="midDiv" style="margin: 8px -8px" >
+			<div id="Perfil">
+				<table class="table-condensed table tablePerfil">
+					<tr>		
+						<td rowspan="100%">			
+							<img id="mySelf" alt="" src="image/image-wel.jpg" 
+								class="img-responsive img-circle" 
+								title="It's me">
+						</td>									
+					</tr>
+					<tr>
+						<td>
+							<p>Nome: </p>
+						</td>
+						<td>
+							<p>Welbert Azevedo Serra</p>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<p>Ano de Nascimento: </p>
+						</td>
+						<td>
+							<p>1993</p>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<p>Cidade: </p>
+						</td>
+						<td>
+							<p>Salvador</p>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<p>Estado: </p>
+						</td>
+						<td>
+							<p>Bahia</p>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<p>E-Mail: </p>
+						</td>
+						<td>
+							<p>welberts@gmail.com</p>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<p>Curso: </p>
+						</td>
+						<td>
+							<p>Ci&ecirc;ncia da Computa&ccedil;&atilde;o - UFBA</p>
+						</td>	
+					</tr>					
+					<tr>
+						<td colspan="100%" id="divLittleMySelf">
+							<img id="littleMySelf" alt="" src="image/image-wel.jpg" 
+								class="img-responsive img-circle"
+								title="It's me" >
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+		
+
+		
+		<div id="botDiv" class="extremidade" align="center">
+			<table style="text-align: center;">
+			<tr>
+				<td style="padding-right: 10px;">
+					<p style="color: #ffffff; font-size: 2.7vh;">Desenvolvido por 
+						<i>Welbert Serra</i>
+					</p>
+				</td>
+				<td style="width: 25px;">
+					<a href="https://github.com/welbert" target="_blank">
+						<img class="img-responsive img-circle" width="90%" height="100%" alt=""
+						src="image/github.png" title="GitHub">
+					</a>				
+				</td>
+				<td  style="width: 25px;">
+					<a href="https://www.linkedin.com/in/welbert-serra-015446b6" target="_blank"><img class="img-responsive img-circle" width="90%" height="100%" alt="" 
+						src="image/linkedin.png" title="Linkedin"></a>
+				</td>
+				<td  style="width: 25px;">			
+					<a href="https://www.facebook.com/welbert.serra" target="_blank"><img class="img-responsive img-circle" width="90%" height="100%" alt="" 
+						src="image/facebook.png" title="Facebook"></a>
+				</td>
+				<td  style="width: 25px;">			
+					<a href="http://lattes.cnpq.br/0863919884390293" target="_blank"><img class="img-responsive img-circle" width="90%" height="100%" alt="" 
+						src="image/curriculolattes.png" title="Currículo Lattes"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="color: #ffffff; font-size: 1.8vh; font-style: italic;">
+						welberts@gmail.com
+					</p>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
