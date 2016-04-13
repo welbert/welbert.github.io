@@ -63,6 +63,22 @@
 	display: none;
     transition: all 0.5s linear 0s;
 }
+@media screen and (max-device-width: 800px){
+	.botIcons{
+		color: white;
+		font-size: 20px !important;
+		padding-top: 5px;
+		padding-left: 10px;
+	}
+}
+
+@media screen and (min-device-width: 801px) {
+	.botIcons{
+		color: white;
+		font-size: 18px !important;
+		padding-top: 5px;
+	}
+}
 
 .tropHide{
     filter: opacity(0%);
