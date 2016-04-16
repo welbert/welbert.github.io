@@ -8,11 +8,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/w3.css" />
-<link rel="stylesheet" type="text/css" href="css/FontAwesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="font/FontAwesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/Script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 
 </Head>
@@ -25,48 +25,9 @@
 			  $("#content").fadeIn(1000);
 			});
 	});
-
-
-	function onInit() {
-		document.getElementById("loadGif").style.width = (window.innerHeight * 50)
-		/ 100 + "px";
-		document.getElementById("loadGif").style.height = (window.innerHeight * 50)
-		/ 100 + "px";
-		//document.getElementById("loadGif").style.marginTop = (window.innerHeight * 20)
-		/// 100 + "px";
-		
-		document.getElementById("topDiv").style.width = window.innerWidth
-				+ "px";
-		document.getElementById("botDiv").style.width = window.innerWidth
-				+ "px";
-		document.getElementById("topDiv").style.height = (window.innerHeight * 10)
-				/ 100 + "px";
-		document.getElementById("botDiv").style.height = (window.innerHeight * 10)
-				/ 100 + "px";
-		document.getElementById("midDiv").style.width = window.innerWidth
-		+ "px";
-		document.getElementById("midDiv").style.height = (window.innerHeight * 82)
-		/ 100 + "px";
-		
-		if(window.innerWidth - window.innerHeight <= 0){
-			document.getElementById("mySelf").style = "display: none;";		
-			
-			document.getElementById("littleMySelf").style = 
-				"filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.6));display: block;box-shadow: 6px 6px 12px rgb(0, 0, 0);";
-			document.getElementById("littleMySelf").style.width = 
-				(window.innerHeight * 20)/ 100 + "px";
-		}else{
-			document.getElementById("mySelf").style = 
-				"filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.6));display: block;box-shadow: 6px 6px 12px rgb(0, 0, 0);";
-			document.getElementById("mySelf").style.width = (window.innerHeight * 60)
-			/ 100 + "px";
-			
-			document.getElementById("littleMySelf").style = "display: none;";
-		}
-	}
 </script>
 <body class="background"
-onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
+onload="onInit()" onresize="onInit()">
 	<div id="loading">
 	<div style="display: inline-block;">
 	<table style="height: 100%">
@@ -80,24 +41,31 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 		 </tr>
 		<tr><td style="height: 33%"></tr>
 	 </table>
-	 </div>	 
 	 </div>
-  
+	 </div>
+
+	 <div id="modalPerfil" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'"
+	 	style="padding-top:10px;">
+		 <img id="modalPicture" alt="" src="image/image-wel.jpg"
+		 	class="img-responsive img-circle" />
+	 </div>
+
 	<div id="content" style="display: none; z-index: 1;">
 		<div id="topDiv" class="extremidade" align="center">
-			Welbert Serra	
+			Welbert Serra
 		</div>
-		
-		
+
+
+
 		<div id="midDiv" style="margin: 8px -8px" >
 			<div id="Perfil">
 				<table class="table-condensed table tablePerfil">
-					<tr>		
-						<td rowspan="100%">			
-							<img id="mySelf" alt="" src="image/image-wel.jpg" 
-								class="img-responsive img-circle" 
-								title="It's me">
-						</td>									
+					<tr>
+						<td rowspan="100%">
+							<img id="mySelf" alt="" src="image/image-wel.jpg"
+								class="img-responsive img-circle w3-hover-opacity"
+								title="It's me" onclick="document.getElementById('modalPerfil').style.display='block'" >
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -105,7 +73,7 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>Welbert Azevedo Serra</p>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -113,7 +81,7 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>1993</p>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -121,7 +89,7 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>Salvador</p>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -129,7 +97,7 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>Bahia</p>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -137,7 +105,7 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>welberts@gmail.com</p>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -145,47 +113,47 @@ onload="onInit()" onresize="onInit()" onkeypress="KeyPressed(event)">
 						</td>
 						<td>
 							<p>Ci&ecirc;ncia da Computa&ccedil;&atilde;o - UFBA</p>
-						</td>	
-					</tr>					
+						</td>
+					</tr>
 					<tr>
 						<td colspan="100%" id="divLittleMySelf">
-							<img id="littleMySelf" alt="" src="image/image-wel.jpg" 
-								class="img-responsive img-circle"
-								title="It's me" >
+							<img id="littleMySelf" alt="" src="image/image-wel.jpg"
+								class="img-responsive img-circle w3-hover-opacity"
+								title="It's me" onclick="document.getElementById('modalPerfil').style.display='block'" />
 						</td>
 					</tr>
 				</table>
-				
+
 			</div>
 		</div>
-		
 
-		
+
+
 		<div id="botDiv" class="extremidade" align="center">
 			<table style="text-align: center;width: initial;">
 			<tr>
-				
+
 					<a href="https://github.com/welbert" target="_blank" title="GitHub">
 						<i class="fa fa-github w3-hover-white botIcons"></i>
-					</a>				
-				
-				
+					</a>
+
+
 					<a href="https://www.linkedin.com/in/welbert-serra-015446b6" target="_blank" title="Linkedin">
 						<i class="fa fa-linkedin w3-hover-white w3-hover-text-indigo botIcons"></i>
 					</a>
-			
-						
+
+
 					<a href="https://www.facebook.com/welbert.serra" target="_blank" title="Facebook">
 						<i class="fa fa-facebook-official w3-hover-white w3-hover-text-indigo botIcons"></i>
 					</a>
-				
-							
+
+
 					<a href="http://lattes.cnpq.br/0863919884390293" target="_blank" style="display: none;">
-						<img class="img-circle" width="18px" alt="" 
-							src="image/curriculolattes.png" title="Currículo Lattes">
+						<img class="img-circle" width="18px" alt=""
+							src="image/curriculolattes.png" title="Currï¿½culo Lattes">
 					</a>
-					
-				
+
+
 			</tr>
 			<tr>
 				<td>

@@ -12,10 +12,10 @@
 #topDiv{
 	top:0;
 	text-shadow: 1px 0px 2px rgb(255, 255, 255);
-	font-size: 6vh;	
+	font-size: 6vh;
 	border-bottom: 2px solid;
 	border-bottom-color: rgb(177, 177, 177);
-	-moz-border-bottom-colors: rgb(177, 177, 177) rgb(101, 101, 101);	
+	-moz-border-bottom-colors: rgb(177, 177, 177) rgb(101, 101, 101);
 }
 
 #perfil{
@@ -29,7 +29,7 @@
 
 .background{
 	background: fixed no-repeat url("../image/backgroung.jpg");
-	background-size: cover; 
+	background-size: cover;
 	font-family: Courier New;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .tablePerfil{
-	color: whitesmoke;	
+	color: whitesmoke;
 	font-size: 2.5vh;
 }
 
@@ -70,6 +70,10 @@
 		padding-top: 5px;
 		padding-left: 10px;
 	}
+	#modalPicture{
+		width:70%;
+		margin-left: 15%;
+	}
 }
 
 @media screen and (min-device-width: 801px) {
@@ -77,6 +81,10 @@
 		color: white;
 		font-size: 18px !important;
 		padding-top: 5px;
+	}
+	#modalPicture{
+		width:40%;
+		margin-left: 25%;
 	}
 }
 
@@ -89,4 +97,3 @@ div:hover ~ span {
     display: block;
     filter: opacity(100%);
 }
-
