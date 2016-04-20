@@ -1,6 +1,13 @@
 .extremidade{
 	background-color: #000000;
 }
+
+.background{
+	background: fixed no-repeat url("../image/backgroung.jpg");
+	background-size: cover;
+	font-family: Courier New;
+}
+
 #botDiv{
 	position: fixed;
 	bottom: 0;
@@ -25,12 +32,6 @@
 	width: 80%;
 	margin: auto;
 	margin-top: 25px;
-}
-
-.background{
-	background: fixed no-repeat url("../image/backgroung.jpg");
-	background-size: cover;
-	font-family: Courier New;
 }
 
 .divInformation{
